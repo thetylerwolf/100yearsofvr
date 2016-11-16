@@ -1,7 +1,7 @@
 window.onload = initScene;
 
 document.addEventListener('click', function() {
-    if(AFRAME.utils.isMobile()) initScene();
+    if((AFRAME.utils.isMobile || AFRAME.utils.device.isMobile)()) initScene();
 });
 
 function initScene() {
