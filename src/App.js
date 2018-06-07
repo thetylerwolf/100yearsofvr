@@ -4,6 +4,9 @@ import {
   Row,
   Col,
 } from 'react-bootstrap'
+import {
+  Link
+} from 'react-router-dom'
 import years from './years'
 
 import './App.css'
@@ -26,7 +29,7 @@ class App extends Component {
             <Col xs={ 12 }>
               {
                 years.map((d,i) => {
-                  return (<a key={ i } href={ '/year/' + (i + 1) }>Year { i+1 }: { d.name }</a>)
+                  return (<Link key={ i } to={ 'years/' + (i + 1) }>Year { i+1 }: { d.name }</Link>)
                 })
               }
             </Col>
