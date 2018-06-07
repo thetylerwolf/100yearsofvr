@@ -11,7 +11,14 @@ import {
 import registerServiceWorker from './registerServiceWorker';
 
 import createHistory from 'history/createBrowserHistory'
+
 const history = createHistory()
+history.listen((location, action) => {
+  window.gtag('config', 'UA-79915122-1', {
+    'page_title' : location.pathname,
+    'page_path': location.pathname
+  })
+})
 
 class Routes extends Component {
   render() {

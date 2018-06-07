@@ -2,7 +2,6 @@
   "name": "100yearsofvr",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thetylerwolf.github.io/100yearsofvr",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
