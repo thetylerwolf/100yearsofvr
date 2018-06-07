@@ -11,3 +11,7 @@ footer {
 .content-list {
   padding-top:30px;
 }
+
+ul li {
+  list-style: none;
+}

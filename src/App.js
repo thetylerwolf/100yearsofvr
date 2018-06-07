@@ -27,11 +27,17 @@ class App extends Component {
         <Grid className="content-list">
           <Row>
             <Col xs={ 12 }>
+              <ul>
               {
                 years.map((d,i) => {
-                  return (<Link key={ i } to={ 'years/' + (i + 1) }>Year { i+1 }: { d.name }</Link>)
+                  return (
+                    <li>
+                      <Link key={ i } to={ 'years/' + (i + 1) }>Year { i+1 }: { d.name }</Link>
+                    </li>
+                  )
                 })
               }
+              </ul>
             </Col>
           </Row>
         </Grid>
