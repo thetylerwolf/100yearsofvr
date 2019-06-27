@@ -46,7 +46,7 @@ class App extends Component {
           <Grid>
             <Row>
               <Col xs={ 12 }>
-                Copyright 2018 - Tyler Wolf
+                Copyright { 1900 + (new Date()).getYear() } Tyler Wolf
               </Col>
             </Row>
           </Grid>
