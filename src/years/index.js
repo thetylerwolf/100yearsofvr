@@ -4,6 +4,8 @@ let years = [{
   name: 'Megastructure'
 },{
   name: 'Tubic'
+},{
+  name: 'Wind'
 }]
 
 export default years
