@@ -10,9 +10,9 @@ import {
 } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 
-import createHistory from 'history/createBrowserHistory'
+import { createBrowserHistory } from 'history'
 
-const history = createHistory()
+const history = createBrowserHistory()
 history.listen((location, action) => {
   window.gtag('config', 'UA-79915122-1', {
     'page_title' : location.pathname,

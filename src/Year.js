@@ -14,7 +14,7 @@ class Year extends Component {
       <div className="Year">
 
         <iframe
-          src={ 'https://thetylerwolf.github.io/3dyears/' + this.props.match.params.year }
+          src={ 'https://thetylerwolf.github.io/3dyears/' + this.props.match.params.year + (this.props.location.search || '') }
           frameBorder="0"
           style={{
             'overflow':'hidden',
@@ -23,7 +23,7 @@ class Year extends Component {
           }}
           height="100%"
           width="100%"
-          allowFullScreen="true">
+          allowFullScreen={true}>
         </iframe>
 
         <footer>
